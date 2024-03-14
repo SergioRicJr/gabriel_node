@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Atividades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        li:hover {
+            background-color: #e9e9e9;
+        }
+        .field {
+            font-weight: bold;
+            color: #555;
+        }
+        .value {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Último registro</h1>
+        <ul>
+            <li>
+                <span class="field">Sensor:</span> <span class="value">{{ atividade.sensor }}</span>,<br>
+                <span class="field">Botão:</span> <span class="value">{{ atividade.botao }}</span>,<br>
+                <span class="field">Liga Robô:</span> <span class="value">{{ atividade.liga_robo }}</span>,<br>
+                <span class="field">Reset Contador:</span> <span class="value">{{ atividade.reset_contador }}</span>,<br>
+                <span class="field">Valor Contagem:</span> <span class="value">{{ atividade.valor_contagem }}</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
